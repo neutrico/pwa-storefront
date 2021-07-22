@@ -42,7 +42,7 @@ module.exports = ({
 
         config.resolve.alias = {
           ...config.resolve.alias,
-          'react-storefront-connector': connector,
+          'pwa-storefront-connector': connector,
         }
       }
 
