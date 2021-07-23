@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import CarouselDots from 'react-storefront/carousel/CarouselDots'
+import CarouselDots from 'pwa-storefront/carousel/CarouselDots'
 
 describe('CarouselDots', () => {
   let wrapper

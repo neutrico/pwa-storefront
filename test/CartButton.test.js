@@ -1,8 +1,8 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import CartButton from 'react-storefront/CartButton'
-import Link from 'react-storefront/link/Link'
-import ToolbarButton from 'react-storefront/ToolbarButton'
+import CartButton from 'pwa-storefront/CartButton'
+import Link from 'pwa-storefront/link/Link'
+import ToolbarButton from 'pwa-storefront/ToolbarButton'
 import { AddShoppingCart as CustomIcon } from '@material-ui/icons'
 import { Badge } from '@material-ui/core'
 

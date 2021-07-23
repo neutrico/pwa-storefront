@@ -196,7 +196,7 @@ export default function SessionProvider({ url, children }) {
 SessionProvider.propTypes = {
   /**
    * A URL to fetch when the app mounts which establishes a user session and returns user and cart data
-   * to be made available via `react-storefront/session/SessionContext`.
+   * to be made available via `pwa-storefront/session/SessionContext`.
    */
   url: PropTypes.string,
 }

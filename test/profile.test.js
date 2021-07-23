@@ -1,4 +1,4 @@
-import profile from 'react-storefront/profile'
+import profile from 'pwa-storefront/profile'
 
 describe('profile', () => {
   const originalLog = console.log

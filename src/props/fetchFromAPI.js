@@ -7,8 +7,8 @@ import getAPIURL from '../api/getAPIURL'
  * `/p/1`, this function will fetch data from `/api/p/1?__v__={__NEXT_DATA__.buildId}`.
  *
  * ```js
- * import fetchFromAPI from 'react-storefront/props/fetchFromAPI'
- * import createLazyProps from 'react-storefront/props/createLazyProps'
+ * import fetchFromAPI from 'pwa-storefront/props/fetchFromAPI'
+ * import createLazyProps from 'pwa-storefront/props/createLazyProps'
  *
  * Product.getInitialProps = createLazyProps(opts => {
  *   return fetchFromAPI(opts)

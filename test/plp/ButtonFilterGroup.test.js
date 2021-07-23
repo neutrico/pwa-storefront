@@ -1,9 +1,9 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import SearchResultsContext from 'react-storefront/plp/SearchResultsContext'
-import ButtonFilterGroup from 'react-storefront/plp/ButtonFilterGroup'
-import SwatchProductOption from 'react-storefront/option/SwatchProductOption'
-import TextProductOption from 'react-storefront/option/TextProductOption'
+import SearchResultsContext from 'pwa-storefront/plp/SearchResultsContext'
+import ButtonFilterGroup from 'pwa-storefront/plp/ButtonFilterGroup'
+import SwatchProductOption from 'pwa-storefront/option/SwatchProductOption'
+import TextProductOption from 'pwa-storefront/option/TextProductOption'
 
 describe('ButtonFilterGroup', () => {
   let wrapper

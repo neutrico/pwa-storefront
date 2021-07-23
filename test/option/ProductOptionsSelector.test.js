@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { mount } from 'enzyme'
-import ProductOptionSelector from 'react-storefront/option/ProductOptionSelector'
-import ProductOption from 'react-storefront/option/ProductOption'
+import ProductOptionSelector from 'pwa-storefront/option/ProductOptionSelector'
+import ProductOption from 'pwa-storefront/option/ProductOption'
 
 describe('ProductOptionSelector', () => {
   const colors = [

@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import FilterHeader from 'react-storefront/plp/FilterHeader'
-import SearchResultsContext from 'react-storefront/plp/SearchResultsContext'
+import FilterHeader from 'pwa-storefront/plp/FilterHeader'
+import SearchResultsContext from 'pwa-storefront/plp/SearchResultsContext'
 
 describe('FilterHeader', () => {
   let wrapper

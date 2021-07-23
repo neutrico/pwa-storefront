@@ -2,8 +2,8 @@ import React, { createRef } from 'react'
 import { mount } from 'enzyme'
 import { goBack, navigate } from '../mocks/mockRouter'
 import { windowLocationMock, historyMock } from '../mocks/mockHelper'
-import LinkContext from 'react-storefront/link/LinkContext'
-import useLazyState from 'react-storefront/hooks/useLazyState'
+import LinkContext from 'pwa-storefront/link/LinkContext'
+import useLazyState from 'pwa-storefront/hooks/useLazyState'
 import { act } from 'react-dom/test-utils'
 
 jest.useFakeTimers()

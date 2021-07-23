@@ -1,4 +1,4 @@
-import createLazyProps from 'react-storefront/props/createLazyProps'
+import createLazyProps from 'pwa-storefront/props/createLazyProps'
 
 describe('createLazyProps', () => {
   describe('server', () => {

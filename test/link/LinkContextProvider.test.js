@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import LinkContextProvider from 'react-storefront/link/LinkContextProvider'
-import LinkContext from 'react-storefront/link/LinkContext'
+import LinkContextProvider from 'pwa-storefront/link/LinkContextProvider'
+import LinkContext from 'pwa-storefront/link/LinkContext'
 import { mount } from 'enzyme'
 import { navigate } from '../mocks/mockRouter'
 

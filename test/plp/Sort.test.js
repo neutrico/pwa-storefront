@@ -1,8 +1,8 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import Sort from 'react-storefront/plp/Sort'
+import Sort from 'pwa-storefront/plp/Sort'
 import { Button, MenuItem } from '@material-ui/core'
-import SearchResultsContext from 'react-storefront/plp/SearchResultsContext'
+import SearchResultsContext from 'pwa-storefront/plp/SearchResultsContext'
 
 describe('Sort', () => {
   const mockSetSort = jest.fn()

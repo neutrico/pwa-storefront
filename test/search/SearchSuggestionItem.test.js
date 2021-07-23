@@ -1,9 +1,9 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import SearchProvider from 'react-storefront/search/SearchProvider'
-import SearchSuggestionItem from 'react-storefront/search/SearchSuggestionItem'
-import Image from 'react-storefront/Image'
-import PWAContext from 'react-storefront/PWAContext'
+import SearchProvider from 'pwa-storefront/search/SearchProvider'
+import SearchSuggestionItem from 'pwa-storefront/search/SearchSuggestionItem'
+import Image from 'pwa-storefront/Image'
+import PWAContext from 'pwa-storefront/PWAContext'
 
 describe('SearchSuggestionItem', () => {
   let wrapper

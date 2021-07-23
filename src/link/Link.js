@@ -18,7 +18,7 @@ import getAPIURL from '../api/getAPIURL'
  * Example:
  *
  * ```js
- * import Link from 'react-storefront/link/Link'
+ * import Link from 'pwa-storefront/link/Link'
  *
  * <Link href="/p/[productId]" as={`/p/${product.id}`} pageData={{ product }}>
  *   {product.name}

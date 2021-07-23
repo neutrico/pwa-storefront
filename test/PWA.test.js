@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { mount } from 'enzyme'
-import PWA from 'react-storefront/PWA'
-import PWAContext from 'react-storefront/PWAContext'
+import PWA from 'pwa-storefront/PWA'
+import PWAContext from 'pwa-storefront/PWAContext'
 import { eventListenersMock } from './mocks/mockHelper'
 import { act } from 'react-dom/test-utils'
 

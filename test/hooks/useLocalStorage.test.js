@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { mount } from 'enzyme'
-import useLocalStorage from 'react-storefront/hooks/useLocalStorage'
+import useLocalStorage from 'pwa-storefront/hooks/useLocalStorage'
 
 describe('useLocalStorage.test', () => {
   let wrapper

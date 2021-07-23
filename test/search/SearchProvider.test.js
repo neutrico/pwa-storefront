@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { mount } from 'enzyme'
-import SearchProvider from 'react-storefront/search/SearchProvider'
-import SearchContext from 'react-storefront/search/SearchContext'
-import { StaleResponseError } from 'react-storefront/utils/fetchLatest'
+import SearchProvider from 'pwa-storefront/search/SearchProvider'
+import SearchContext from 'pwa-storefront/search/SearchContext'
+import { StaleResponseError } from 'pwa-storefront/utils/fetchLatest'
 import { act } from 'react-dom/test-utils'
 
 describe('SearchProvider', () => {

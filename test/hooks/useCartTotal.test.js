@@ -1,6 +1,6 @@
 import React from 'react'
-import useCartTotal from 'react-storefront/hooks/useCartTotal'
-import SessionContext from 'react-storefront/session/SessionContext'
+import useCartTotal from 'pwa-storefront/hooks/useCartTotal'
+import SessionContext from 'pwa-storefront/session/SessionContext'
 import { mount } from 'enzyme'
 
 describe('useCartTotal', () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import useStateFromProp from 'react-storefront/hooks/useStateFromProp'
+import useStateFromProp from 'pwa-storefront/hooks/useStateFromProp'
 import sleep from '../config/sleep'
 
 describe('useStateFromProp', () => {

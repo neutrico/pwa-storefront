@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import NavTab from 'react-storefront/nav/NavTab'
-import NavTabs from 'react-storefront/nav/NavTabs'
+import NavTab from 'pwa-storefront/nav/NavTab'
+import NavTabs from 'pwa-storefront/nav/NavTabs'
 import { Tabs } from '@material-ui/core'
 import { useRouter } from '../mocks/mockRouter'
 

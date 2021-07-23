@@ -1,4 +1,4 @@
-import withCaching from 'react-storefront/utils/withCaching'
+import withCaching from 'pwa-storefront/utils/withCaching'
 
 describe('withCaching', () => {
   it('should set header if maxAgeSeconds is present', () => {

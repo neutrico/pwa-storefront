@@ -5,9 +5,9 @@ import Carousel, {
   AutoPlaySwipeableViews,
   VirtualizeSwipeableViews,
   AutoPlayVirtualizeSwipeableViews,
-} from 'react-storefront/carousel/Carousel'
-import CarouselDots from 'react-storefront/carousel/CarouselDots'
-import CarouselArrows from 'react-storefront/carousel/CarouselArrows'
+} from 'pwa-storefront/carousel/Carousel'
+import CarouselDots from 'pwa-storefront/carousel/CarouselDots'
+import CarouselArrows from 'pwa-storefront/carousel/CarouselArrows'
 
 describe('Carousel', () => {
   let wrapper

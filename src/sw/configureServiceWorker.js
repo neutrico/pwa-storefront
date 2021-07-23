@@ -12,7 +12,7 @@ import { CacheableResponsePlugin } from 'workbox-cacheable-response'
  * **Example**
  *
  * ```js
- *  import { configureServiceWorker } from 'react-storefront/sw'
+ *  import { configureServiceWorker } from 'pwa-storefront/sw'
  *
  *  const maxAgeSeconds = 60 * 60 // 1 hour
  *
@@ -81,7 +81,7 @@ function log(...message) {
   // istanbul ignore else
   if (process.env.NODE_ENV !== 'production') {
     console.log(
-      '%creact-storefront service-worker',
+      '%cpwa-storefront service-worker',
       'background: #43a047; color: #ffffff; font-weight:bold; padding: 3px 5px; border-radius: 5px',
       ...message,
     )

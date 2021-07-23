@@ -1,10 +1,10 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import SearchResultsContext from 'react-storefront/plp/SearchResultsContext'
-import FacetGroup from 'react-storefront/plp/FacetGroup'
-import CheckboxFilterGroup from 'react-storefront/plp/CheckboxFilterGroup'
-import ButtonFilterGroup from 'react-storefront/plp/ButtonFilterGroup'
-import ExpandableSection from 'react-storefront/ExpandableSection'
+import SearchResultsContext from 'pwa-storefront/plp/SearchResultsContext'
+import FacetGroup from 'pwa-storefront/plp/FacetGroup'
+import CheckboxFilterGroup from 'pwa-storefront/plp/CheckboxFilterGroup'
+import ButtonFilterGroup from 'pwa-storefront/plp/ButtonFilterGroup'
+import ExpandableSection from 'pwa-storefront/ExpandableSection'
 
 describe('FacetGroup', () => {
   let wrapper

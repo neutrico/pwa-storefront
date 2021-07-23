@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import Accordion from 'react-storefront/Accordion'
-import ExpandableSection from 'react-storefront/ExpandableSection'
+import Accordion from 'pwa-storefront/Accordion'
+import ExpandableSection from 'pwa-storefront/ExpandableSection'
 import { ExpansionPanelSummary, ExpansionPanel } from '@material-ui/core'
 
 describe('Accordion', () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import LoadMask from 'react-storefront/LoadMask'
+import LoadMask from 'pwa-storefront/LoadMask'
 import { CircularProgress } from '@material-ui/core'
 
 describe('LoadMask', () => {

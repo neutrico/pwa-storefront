@@ -9,9 +9,9 @@ import getAPIURL from '../api/getAPIURL'
  * Provides context to filter, sorting, and pagination components.
  *
  * ```js
- *  import useSearchResultsStore from 'react-storefront/plp/useSearchResultsStore'
- *  import SearchResultsProvider from 'react-storefront/plp/SearchResultsProvider'
- *  import FilterButton from 'react-storefront/plp/FilterButton'
+ *  import useSearchResultsStore from 'pwa-storefront/plp/useSearchResultsStore'
+ *  import SearchResultsProvider from 'pwa-storefront/plp/SearchResultsProvider'
+ *  import FilterButton from 'pwa-storefront/plp/FilterButton'
  *
  *  function Subcategory(lazyProps) {
  *    const [store, updateStore] = useSearchResultsStore(lazyProps)

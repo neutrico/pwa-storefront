@@ -18,7 +18,7 @@ describe('NextScriptDeferred', () => {
         },
       }))
 
-      NextScript = require('react-storefront/NextScript').default
+      NextScript = require('pwa-storefront/NextScript').default
     })
   })
 

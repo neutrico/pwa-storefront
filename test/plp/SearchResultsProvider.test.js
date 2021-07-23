@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { mount } from 'enzyme'
-import SearchResultsProvider from 'react-storefront/plp/SearchResultsProvider'
-import SearchResultsContext from 'react-storefront/plp/SearchResultsContext'
+import SearchResultsProvider from 'pwa-storefront/plp/SearchResultsProvider'
+import SearchResultsContext from 'pwa-storefront/plp/SearchResultsContext'
 import { act } from 'react-dom/test-utils'
 
 describe('SearchResultsProvider', () => {

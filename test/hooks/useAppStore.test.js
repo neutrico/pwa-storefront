@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import useAppStore from 'react-storefront/hooks/useAppStore'
+import useAppStore from 'pwa-storefront/hooks/useAppStore'
 
 describe('useAppStore', () => {
   it('should update when the appData changes', () => {

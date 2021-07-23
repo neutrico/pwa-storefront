@@ -1,8 +1,8 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import SearchResultsContext from 'react-storefront/plp/SearchResultsContext'
-import FacetGroup from 'react-storefront/plp/FacetGroup'
-import Filter from 'react-storefront/plp/Filter'
+import SearchResultsContext from 'pwa-storefront/plp/SearchResultsContext'
+import FacetGroup from 'pwa-storefront/plp/FacetGroup'
+import Filter from 'pwa-storefront/plp/Filter'
 
 describe('Filter', () => {
   let wrapper

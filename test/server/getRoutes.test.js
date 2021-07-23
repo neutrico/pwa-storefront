@@ -1,4 +1,4 @@
-import getRoutes from 'react-storefront/server/getRoutes'
+import getRoutes from 'pwa-storefront/server/getRoutes'
 
 describe('getRoutes', () => {
   const manifest = {

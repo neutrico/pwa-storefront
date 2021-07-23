@@ -10,7 +10,7 @@ const withServiceWorker = require('./withServiceWorker')
  */
 module.exports = ({
   prefetchQueryParam,
-  connector = 'react-storefront/mock-connector',
+  connector = 'pwa-storefront/mock-connector',
   ...nextConfig
 } = {}) => {
   const usePreact = process.env.preact === 'true'
@@ -64,14 +64,14 @@ module.exports = ({
       }
 
       if (process.env.NODE_ENV === 'development') {
-        // This makes it easier to develop apps against a local clone of react-storefront linked with yalc. Here
+        // This makes it easier to develop apps against a local clone of pwa-storefront linked with yalc. Here
         // we ensure that the server build recompiles when any linked dependency changes.
         config.plugins.push(
           new ClearRequireCachePlugin([
             /\.next\/server\/ssr-module-cache.js/,
-            /react-storefront-analytics/,
-            /react-storefront-amp/,
-            /react-storefront\//,
+            /pwa-storefront-analytics/,
+            /pwa-storefront-amp/,
+            /pwa-storefront\//,
           ]),
         )
       }

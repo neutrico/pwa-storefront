@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { mount } from 'enzyme'
 import { Button } from '@material-ui/core'
-import ProductOption from 'react-storefront/option/ProductOption'
-import TextProductOption from 'react-storefront/option/TextProductOption'
-import SwatchProductOption from 'react-storefront/option/SwatchProductOption'
+import ProductOption from 'pwa-storefront/option/ProductOption'
+import TextProductOption from 'pwa-storefront/option/TextProductOption'
+import SwatchProductOption from 'pwa-storefront/option/SwatchProductOption'
 
 describe('ProductOption', () => {
   let wrapper

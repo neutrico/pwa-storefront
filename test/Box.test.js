@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import Box, { Hbox, Vbox } from 'react-storefront/Box'
+import Box, { Hbox, Vbox } from 'pwa-storefront/Box'
 
 describe('Box', () => {
   let wrapper

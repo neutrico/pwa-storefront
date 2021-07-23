@@ -14,8 +14,8 @@
  * Example:
  *
  * ```js
- * import useLazyState from 'react-storefront/hooks/useLazyState'
- * import fetchFromAPI from 'react-storefront/props/fetchFromAPI'
+ * import useLazyState from 'pwa-storefront/hooks/useLazyState'
+ * import fetchFromAPI from 'pwa-storefront/props/fetchFromAPI'
  *
  * function Product(lazyProps) {
  *   const [state, updateState] = useLazyState(lazyProps)
