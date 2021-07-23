@@ -1,7 +1,4 @@
-import PropTypes from 'prop-types'
 import React from 'react'
-import Image from '../Image'
-import ReactImageMagnify from 'react-image-magnify'
 import clsx from 'clsx'
 import { makeStyles } from '@material-ui/core/styles'
 
@@ -85,65 +82,6 @@ function Media({
   } else {
     return <ImageComponent key={src} src={src} alt={alt} fill {...imageProps} />
   }
-}
-
-Media.propTypes = {
-  /**
-   * The type of media to display.
-   */
-  type: PropTypes.oneOf(['image', 'video']),
-
-  /**
-   * Props passed to the [`ReactImageMagnify`](https://github.com/ethanselzer/react-image-magnify#usage)
-   * element for an `'image'` type when [`magnify`](#prop-magnify) is defined.
-   */
-  magnifyProps: PropTypes.object,
-
-  /**
-   * Other props to pass to the video component.
-   */
-  videoProps: PropTypes.object,
-
-  /**
-   * Other props to pass to the [`Image`](/apiReference/Image) for an `'image'` type.
-   */
-  imageProps: PropTypes.object,
-
-  /**
-   * Used as the `alt` attribute for the `<img>` or `<video>`.
-   */
-  alt: PropTypes.string,
-
-  /**
-   * Used as the `src` attribute for the `<img>` or `<video>`.
-   */
-  src: PropTypes.string,
-
-  /**
-   * Used as the source inside the video `<video>`.
-   */
-  sources: PropTypes.array,
-
-  /**
-   * An object to pass to pass to `ReactImageMagnify` containing the data for the magnified image.
-   * If `false`, the media is not able to be magnified.
-   */
-  magnify: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]),
-
-  /**
-   * The component type to use to display images.
-   */
-  ImageComponent: PropTypes.elementType,
-
-  /**
-   * The component type to use to display magnified images.
-   */
-  ImageMagnifyComponent: PropTypes.elementType,
-}
-
-Media.defaultProps = {
-  ImageComponent: Image,
-  ImageMagnifyComponent: ReactImageMagnify,
 }
 
 export default Media
