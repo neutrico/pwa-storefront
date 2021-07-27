@@ -44,7 +44,7 @@ export const styles = theme => ({
   input: {
     width: 100,
     color: theme.palette.text.primary,
-    backgroundColor: theme.palette.grey[200],
+    backgroundColor: 'grey',
     textAlign: 'center',
     padding: theme.spacing(1, 0, 1, 0),
     border: 'none',

@@ -25,7 +25,7 @@ export const styles = theme => ({
     minWidth: 0,
     borderWidth: 1,
     borderStyle: 'solid',
-    borderColor: theme.palette.grey[500],
+    borderColor: 'grey',
     cursor: 'pointer',
     '&:focus': {
       outline: 0,
@@ -36,7 +36,7 @@ export const styles = theme => ({
    */
   buttonDisabled: {
     cursor: 'default',
-    borderColor: theme.palette.grey['A100'],
+    borderColor: 'grey',
   },
   /**
    * Styles applied to the image element.

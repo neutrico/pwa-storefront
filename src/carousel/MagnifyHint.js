@@ -36,14 +36,14 @@ const styles = theme => ({
   icon: {
     height: 16,
     width: 16,
-    color: theme.palette.grey[300],
+    color: 'grey',
   },
   /**
    * Styles applied to the elements containing each of the text captions.
    */
   text: {
     marginLeft: 5,
-    color: theme.palette.grey[300],
+    color: 'grey',
     position: 'relative',
     top: 1,
   },

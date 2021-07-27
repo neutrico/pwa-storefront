@@ -21,7 +21,7 @@ const styles = theme => ({
     display: 'inline',
     ...theme.typography.caption,
     marginLeft: 2,
-    color: theme.palette.grey[700],
+    color: 'grey',
   },
   /**
    * Styles applied to each button element.

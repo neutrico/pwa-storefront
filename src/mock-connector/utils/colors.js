@@ -1,14 +1,14 @@
 const color = c => c.toString().replace(/\#/, '')
 
 const colors = {
-  red: { background: 'red', foreground: 'ffffff' },
-  green: { background: 'green', foreground: 'ffffff' },
-  blue: { background: 'blue', foreground: 'ffffff' },
-  grey: { background: 'grey', foreground: color(grey[600]) },
-  teal: { background: 'teal', foreground: 'ffffff' },
-  orange: { background: 'orange', foreground: 'ffffff' },
-  purple: { background: 'purple', foreground: 'ffffff' },
-  black: { background: 'grey', foreground: 'ffffff' },
+  red: { background: 'red', foreground: 'white' },
+  green: { background: 'green', foreground: 'white' },
+  blue: { background: 'blue', foreground: 'white' },
+  grey: { background: 'grey', foreground: 'black' },
+  teal: { background: 'teal', foreground: 'white' },
+  orange: { background: 'orange', foreground: 'white' },
+  purple: { background: 'purple', foreground: 'white' },
+  black: { background: 'grey', foreground: 'white' },
 }
 
 export default colors

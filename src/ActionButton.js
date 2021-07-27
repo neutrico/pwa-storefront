@@ -26,7 +26,7 @@ export const styles = theme => ({
    */
   button: {
     boxShadow: 'none',
-    backgroundColor: theme.palette.grey[200],
+    backgroundColor: 'grey',
   },
   /**
    * Styles applied to the values container.
