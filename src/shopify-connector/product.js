@@ -3,12 +3,24 @@ import createProduct from './utils/createProduct'
 import createAppData from './utils/createAppData'
 import getBase64ForImage from 'pwa-storefront/utils/getBase64ForImage'
 
+import Client from 'shopify-buy'
+
+const client = Client.buildClient({
+  domain: process.env.SHOPIFY_DOMAIN,
+  storefrontAccessToken: process.env.SHOPIFY_TOKEN,
+});
+
 function asciiSum(string = '') {
   return string.split('').reduce((s, e) => s + e.charCodeAt(), 0)
 }
 
 export default async function product(params, req, res) {
   const { id, color, size } = params
+
+
+  const result1 = await client.product.fetch(id)
+
+  console.log("result1");
 
   const result = await fulfillAPIRequest(req, {
     appData: createAppData,
@@ -29,7 +41,7 @@ export default async function product(params, req, res) {
     return data
   }
 
-  return result
+  return result1
 }
 
 async function getPageData(id) {

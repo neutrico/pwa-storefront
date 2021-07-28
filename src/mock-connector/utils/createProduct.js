@@ -9,7 +9,7 @@ export default function createProduct(id, numColors = 4) {
 
   return {
     id,
-    url: `/p/${id}`,
+    url: `/products/${id}`,
     name: `Product ${id}`,
     price,
     priceText: `$${price}`,

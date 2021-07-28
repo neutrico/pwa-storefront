@@ -26,7 +26,7 @@
  *   // state.pageData will be populated with the `pageData` prop provided to the <Link> element
  *   // that was clicked.  In this way you can provide partial data to a page.  For example:
  *   //
- *   // <Link href="/p/[productId]" as={`/p/${product.id}`} pageData={{ product }}>{product.name}</Link>
+ *   // <Link href="/products/[productId]" as={`/products/${product.id}`} pageData={{ product }}>{product.name}</Link>
  *
  *   return (
  *     <Grid container spacing={4}>

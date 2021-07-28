@@ -8,7 +8,8 @@ function asciiSum(string = '') {
 }
 
 export default async function product(params, req, res) {
-  const { id, color, size } = params
+
+  // const { id, color, size } = params
 
   const result = await fulfillAPIRequest(req, {
     appData: createAppData,

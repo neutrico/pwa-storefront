@@ -10,7 +10,7 @@ const withServiceWorker = require('./withServiceWorker')
  */
 module.exports = ({
   prefetchQueryParam,
-  connector = 'pwa-storefront/mock-connector',
+  connector = 'pwa-storefront/shopify-connector',
   ...nextConfig
 } = {}) => {
   const usePreact = process.env.preact === 'true'

@@ -18,7 +18,7 @@ import { CacheableResponsePlugin } from 'workbox-cacheable-response'
  *
  *  configureServiceWorker({
  *    api: [
- *      { path: '/api/[version]/p/[productId]', maxAgeSeconds },
+ *      { path: '/api/[version]/products/[productId]', maxAgeSeconds },
  *      { path: '/api/[version]/s/[subcategoryId]', maxAgeSeconds },
  *      { path: '/api/[version]/', maxAgeSeconds },
  *    ],

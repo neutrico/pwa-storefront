@@ -11,7 +11,7 @@ import PWAContext from './PWAContext'
  *
  * ```js
  *  <ForwardThumbnail>
- *    <Link href="/p/[productId]" as={product.url}>
+ *    <Link href="/products/[productId]" as={product.url}>
  *      <a>
  *        <Image src={product.media.thumbnail.src} alt={product.media.thumbnail.alt} />
  *        <div>{product.name}</div>

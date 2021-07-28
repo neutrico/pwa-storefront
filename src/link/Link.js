@@ -20,7 +20,7 @@ import getAPIURL from '../api/getAPIURL'
  * ```js
  * import Link from 'pwa-storefront/link/Link'
  *
- * <Link href="/p/[productId]" as={`/p/${product.id}`} pageData={{ product }}>
+ * <Link href="/products/[productId]" as={`/products/${product.id}`} pageData={{ product }}>
  *   {product.name}
  * </Link>
  * ```

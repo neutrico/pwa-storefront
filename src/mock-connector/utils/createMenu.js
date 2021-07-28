@@ -44,7 +44,7 @@ function createSubcategoryItem(i) {
 function createProductItem(i) {
   return {
     text: `Product ${i}`,
-    href: `/p/[productId]`,
-    as: `/p/${i}`,
+    href: `/products/[productId]`,
+    as: `/products/${i}`,
   }
 }
