@@ -1,6 +1,7 @@
 // @create-index
 
 export { default as cartStore } from './cartStore.js';
+export { default as client } from './client.js';
 export { default as colors } from './colors.js';
 export { default as createAppData } from './createAppData.js';
 export { default as createFacets } from './createFacets.js';
