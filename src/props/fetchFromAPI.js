@@ -31,10 +31,6 @@ export default function fetchFromAPI({ req, asPath, pathname }) {
 
   if (req) {
     protocol = 'https://'
-
-    if (host.startsWith('localhost') || host.startsWith('127.0.0.1')) {
-      protocol = 'http://'
-    }
   }
 
   let uri = getAPIURL(asPath)
