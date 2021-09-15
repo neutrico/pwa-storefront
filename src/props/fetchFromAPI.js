@@ -30,6 +30,7 @@ export default function fetchFromAPI({ req, asPath, pathname }) {
   //const protocol = process.env.NODE_ENV === 'development' ? 'http://' : 'https://';
   const protocol = 'https://';
   let uri = getAPIURL(asPath)
+  console.log("req.headers['host']", req.headers['host'])
   console.log("protocol", protocol)
   console.log("host", host || window.location.href)
   console.log("URI", uri)
@@ -51,6 +52,10 @@ export default function fetchFromAPI({ req, asPath, pathname }) {
       cookie: req.headers.cookie,
     }
   }
+
+  const newURL = new URL(uri, host);
+
+  console.log("fetch from API newURL", newURL);
 
   const url = `${protocol}${host}${uri}`
   console.log("URL", url)
