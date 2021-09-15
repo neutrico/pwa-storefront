@@ -25,10 +25,9 @@ import getAPIURL from '../api/getAPIURL'
  * @return {Promise} A promise that resolves to the data that the page should display
  */
 export default function fetchFromAPI({ req, asPath, pathname }) {
-  const host = req ? process.env.API_HOST || req.headers['host'] : window.location.href
+  const protocol = process.env.NODE_ENV === 'development' ? 'http://' : 'https://';
+  const host = req ? `${protocol}${process.env.API_HOST}` || `${protocol}${req.headers['host']}` : window.location.href
 
-  //const protocol = process.env.NODE_ENV === 'development' ? 'http://' : 'https://';
-  const protocol = 'https://';
   let uri = getAPIURL(asPath)
   // console.log("req.headers['host']", req.headers['host'])
   console.log("protocol", protocol)
@@ -57,7 +56,7 @@ export default function fetchFromAPI({ req, asPath, pathname }) {
 
   console.log("fetch from API newURL", newURL);
 
-  const url = `${protocol}${host}${uri}`
+  const url = `${host}${uri}`
   console.log("URL", url)
 
   return fetch(url, { credentials: 'include', headers }).then(res => res.json())
