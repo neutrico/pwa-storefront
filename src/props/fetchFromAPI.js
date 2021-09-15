@@ -31,7 +31,7 @@ export default function fetchFromAPI({ req, asPath, pathname }) {
   const protocol = 'https://';
   let uri = getAPIURL(asPath)
   console.log("protocol", protocol)
-  console.log("host", host)
+  console.log("host", host || window.location.href)
   console.log("URI", uri)
   console.log("pathname", pathname)
   let headers = {}
