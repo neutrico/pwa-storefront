@@ -13,11 +13,7 @@ function getURL(request) {
     url = request
   }
 
-  console.log("newURL", window.location.href, url )
-
   const newUrl = new URL(url, window.location.href || process.env.API_HOST)
-
-  console.log("newURL:", newUrl)
 
   return newUrl;
 }
@@ -31,8 +27,6 @@ if (typeof window !== 'undefined') {
   window.fetch = function rsfVersionedFetch(url, init) {
     const parsed = getURL(url)
 
-    console.log("fetch client side", url, parsed)
-
     if (!isSameOrigin(parsed)) {
       return originalFetch(url, init)
     }
@@ -44,8 +38,6 @@ if (typeof window !== 'undefined') {
       url = new Request(addVersion(parsed).toString(), url)
     }
 
-    console.log("url client side", url)
-
     return originalFetch(url, init)
   }
 }
@@ -56,8 +48,6 @@ if (typeof XMLHttpRequest !== 'undefined') {
 
   XMLHttpRequest.prototype.open = function rsfVersionedOpen(method, url, ...others) {
     const parsed = getURL(url)
-
-    console.log("FETCH PARSED", parsed)
 
     if (isSameOrigin(parsed)) {
       return originalOpen.call(this, method, addVersion(parsed).toString(), ...others)
