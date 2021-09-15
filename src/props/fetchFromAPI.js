@@ -30,6 +30,7 @@ export default function fetchFromAPI({ req, asPath, pathname }) {
   const protocol = process.env.NODE_ENV === 'development' ? 'http://' : 'https://';
 
   let uri = getAPIURL(asPath)
+  console.log("URI", uri)
   let headers = {}
 
   if (req) {
@@ -42,7 +43,7 @@ export default function fetchFromAPI({ req, asPath, pathname }) {
 
     headers = {
       host: req.headers['host'],
-      'x-next-page': `/api${pathname.replace(/\/$/, '')}`,
+      'x-next-page': `test/api${pathname.replace(/\/$/, '')}`,
       cookie: req.headers.cookie,
     }
   }
