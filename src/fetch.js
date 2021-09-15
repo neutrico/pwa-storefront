@@ -13,7 +13,9 @@ function getURL(request) {
     url = request
   }
 
-  return new URL(url, window.location.href)
+  console.log("newURL", process.env.API_HOST, window.location.href, url )
+
+  return new URL(url, window.location.href || process.env.API_HOST)
 }
 
 // Here we patch fetch and XMLHttpRequest to always add version parameter to api calls so that cached results
@@ -46,6 +48,8 @@ if (typeof XMLHttpRequest !== 'undefined') {
 
   XMLHttpRequest.prototype.open = function rsfVersionedOpen(method, url, ...others) {
     const parsed = getURL(url)
+
+    console.log("FETCH PARSED", parsed)
 
     if (isSameOrigin(parsed)) {
       return originalOpen.call(this, method, addVersion(parsed).toString(), ...others)

@@ -27,9 +27,10 @@ import getAPIURL from '../api/getAPIURL'
 export default function fetchFromAPI({ req, asPath, pathname }) {
   const host = req ? process.env.API_HOST || req.headers['host'] : ''
 
-  const protocol = process.env.NODE_ENV === 'development' ? 'http://' : 'https://';
-
+  //const protocol = process.env.NODE_ENV === 'development' ? 'http://' : 'https://';
+  const protocol = 'https://';
   let uri = getAPIURL(asPath)
+  console.log("protocol", protocol)
   console.log("host", host)
   console.log("URI", uri)
   console.log("pathname", pathname)
